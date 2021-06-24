@@ -12,7 +12,6 @@ class Predictor():
                 'rf': 'weights/rf.sav',
                 'svm': 'weights/svm.sav'
             }
-        self.standardlize_factors = np.load('dataset/all_data-7ts-preprocessed.npz')['standardlize_factors']
         self.batch_size = batch_size
         self.model_type = model_type
         self.x = None
