@@ -53,12 +53,8 @@ class Simulator:
         self.adaptive_window_size = math.ceil(self.pred.std()*.3)
         if self.adaptive_ema_alpha == True:
             self.pred_ema = Smoother(self.pred.reshape(-1, 1)[:, 0], self.adaptive_window_size).transform('exponential')
-            self.obv = on_balance_volume(self.volumes, self.pred_ema)
-            self.obv_ema = Smoother(self.obv, self.adaptive_window_size).transform('exponential')
         else:
             self.pred_ema = Smoother(self.pred.reshape(-1, 1)[:, 0], alpha=self.ema_alpha).transform('exponential')
-            self.obv = on_balance_volume(self.volumes, self.pred_ema)
-            self.obv_ema = Smoother(self.obv, alpha=self.ema_alpha).transform('exponential')
         self.brought_units = {} # {"close_price":"n_units"}
         self.trade_record = [] # ('b/s/h', x, y, n_units, value) for record buy/sell/hold use for plot the graph
 
