@@ -11,6 +11,7 @@
 - preprocessstock.py ดาวน์โหลดและจัดรูปข้อมูล
 - progressbar.py สร้าง progressbar ตอนสร้างหรือเรียกใช้ model
 - smoother.py ทํา moving average ข้อมูล
+- batch_manager.py จัดการ batch
 
 # folder models ฟังก์ชั่นสําหรับการทํา particle swarm optimization
 
