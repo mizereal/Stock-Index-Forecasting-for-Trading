@@ -13,9 +13,9 @@
 - smoother.py ทํา moving average ข้อมูล
 - batch_manager.py จัดการ batch
 
-# folder models ฟังก์ชั่นสําหรับการทํา particle swarm optimization
+folder models ฟังก์ชั่นสําหรับการทํา particle swarm optimization
 
-# folder weights สําหรับเก็บบันทึก model
+folder weights สําหรับเก็บบันทึก model
 
 # การคัดเลือก Feature สําหรับสร้าง model
 - feature_selection.ipynb ทําทดสอบการคัดเลือก feature จาก indicator จํานวน 84 ตัวโดยใช้ filter method และ wrapper method
